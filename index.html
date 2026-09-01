@@ -1,1 +1,245 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Happy 18th Birthday, Koko! 🎂</title>
 
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      min-height: 100vh;
+      background:
+        radial-gradient(circle at top left, #ffd6df, transparent 35%),
+        radial-gradient(circle at bottom right, #d7c3ff, transparent 40%),
+        linear-gradient(135deg, #fff5f7, #f6edff);
+      color: #542d3a;
+      overflow-x: hidden;
+    }
+
+    .container {
+      width: min(900px, 92%);
+      margin: auto;
+      padding: 50px 0;
+      text-align: center;
+    }
+
+    .card {
+      background: rgba(255, 255, 255, 0.75);
+      border: 1px solid rgba(255,255,255,0.9);
+      backdrop-filter: blur(10px);
+      border-radius: 30px;
+      padding: 45px 25px;
+      box-shadow: 0 15px 50px rgba(120, 70, 90, 0.15);
+    }
+
+    .small {
+      letter-spacing: 4px;
+      text-transform: uppercase;
+      font-size: 12px;
+      color: #a06b7a;
+      margin-bottom: 15px;
+    }
+
+    h1 {
+      font-family: Georgia, serif;
+      font-size: clamp(45px, 10vw, 90px);
+      line-height: 1;
+      color: #8d4059;
+      margin-bottom: 15px;
+    }
+
+    h2 {
+      font-family: Georgia, serif;
+      font-size: clamp(28px, 6vw, 45px);
+      margin-bottom: 20px;
+      color: #9c5368;
+    }
+
+    .age {
+      display: inline-block;
+      font-size: 80px;
+      font-weight: bold;
+      color: #d47a91;
+      margin: 20px 0;
+      text-shadow: 4px 4px 0 #ffe3ea;
+    }
+
+    .date {
+      font-size: 20px;
+      margin-bottom: 30px;
+      color: #7b5260;
+    }
+
+    .message {
+      max-width: 650px;
+      margin: 25px auto;
+      line-height: 1.9;
+      font-size: 17px;
+      color: #674652;
+    }
+
+    .divider {
+      width: 100px;
+      height: 2px;
+      background: #d998a9;
+      margin: 35px auto;
+    }
+
+    .quote {
+      font-family: Georgia, serif;
+      font-size: 24px;
+      font-style: italic;
+      line-height: 1.6;
+      color: #9b5669;
+      margin: 30px auto;
+      max-width: 700px;
+    }
+
+    .heart {
+      font-size: 35px;
+      animation: pulse 1.5s infinite;
+      display: inline-block;
+    }
+
+    button {
+      border: none;
+      background: #9f5268;
+      color: white;
+      padding: 16px 28px;
+      border-radius: 50px;
+      font-size: 16px;
+      margin-top: 20px;
+      cursor: pointer;
+      box-shadow: 0 8px 20px rgba(159, 82, 104, 0.25);
+    }
+
+    button:active {
+      transform: scale(0.96);
+    }
+
+    #surprise {
+      display: none;
+      margin-top: 30px;
+      padding: 25px;
+      border-radius: 20px;
+      background: #fff0f3;
+      color: #7f4054;
+      line-height: 1.8;
+      font-size: 17px;
+    }
+
+    .footer {
+      margin-top: 35px;
+      font-size: 14px;
+      color: #9b7180;
+    }
+
+    .floating {
+      position: fixed;
+      font-size: 25px;
+      animation: float 7s linear infinite;
+      opacity: 0.7;
+      z-index: -1;
+    }
+
+    .one { left: 10%; animation-delay: 0s; }
+    .two { left: 80%; animation-delay: 2s; }
+    .three { left: 45%; animation-delay: 4s; }
+
+    @keyframes pulse {
+      0%, 100% { transform: scale(1); }
+      50% { transform: scale(1.15); }
+    }
+
+    @keyframes float {
+      from {
+        bottom: -50px;
+        transform: rotate(0deg);
+      }
+      to {
+        bottom: 110%;
+        transform: rotate(360deg);
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="floating one">💗</div>
+  <div class="floating two">✨</div>
+  <div class="floating three">🎀</div>
+
+  <div class="container">
+    <div class="card">
+
+      <p class="small">A special day for someone special</p>
+
+      <h1>Happy Birthday<br>Koko! 🎂</h1>
+
+      <div class="age">18</div>
+
+      <p class="date">9 September ✦</p>
+
+      <div class="divider"></div>
+
+      <h2>For You, With Love ♡</h2>
+
+      <p class="message">
+        Selamat ulang tahun yang ke-18, Koko! 🥳🤍
+        Hari ini bukan cuma tentang bertambahnya usia,
+        tapi juga tentang semua perjalanan, kenangan,
+        dan mimpi indah yang masih menunggu di depan.
+      </p>
+
+      <p class="quote">
+        “I hope this new chapter of your life brings you
+        happiness, beautiful memories, and everything
+        your heart has been wishing for.”
+      </p>
+
+      <p class="message">
+        Semoga di umur 18 tahun ini kamu selalu dikelilingi
+        oleh orang-orang yang sayang sama kamu.
+        Semoga semua hal baik datang menghampirimu,
+        dan semoga kamu tetap menjadi Koko yang
+        spesial dengan caramu sendiri.
+      </p>
+
+      <div class="heart">💗</div>
+
+      <br>
+
+      <button onclick="showSurprise()">Klik hadiah kecilmu 🎁</button>
+
+      <div id="surprise">
+        🎉 SURPRISE! 🎉<br><br>
+        Selamat memasuki usia 18 tahun, Koko!<br>
+        Semoga tahun ini menjadi salah satu tahun
+        paling indah dalam hidupmu. 🤍<br><br>
+        Jangan lupa untuk selalu bahagia ya! 🎂✨
+      </div>
+
+      <p class="footer">
+        Made especially for Koko ♡<br>
+        Happy 18th Birthday • 9 September
+      </p>
+
+    </div>
+  </div>
+
+  <script>
+    function showSurprise() {
+      document.getElementById("surprise").style.display = "block";
+    }
+  </script>
+
+</body>
+</html>
